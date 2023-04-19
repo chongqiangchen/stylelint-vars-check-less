@@ -1,4 +1,4 @@
-# stylelint-vars-check
+# stylelint-vars-check-less
 
 > Use stylelint to check sass and less variables, and prompt through the stylelint plugin
 
@@ -29,7 +29,7 @@ Do you ever forget the name of the variable with the value #f2f2f2 when you use 
 ```javascript
 // stylelint.config.js
     module.exports = {
-        plugins: ['stylelint-vars-check'],
+        plugins: ['stylelint-vars-check-less'],
         rules: {
             'vars/check': [
               {

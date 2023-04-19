@@ -1,6 +1,6 @@
 {
   "name": "stylelint-vars-check-less",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use stylelint to check less variables, and prompt through the stylelint plugin",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   ],
   "author": "<dxiongya@gmail.com>",
   "license": "ISC",
-  "repository": "https://github.com/chongqiangchen/stylelint-vars-check.git",
+  "repository": "https://github.com/chongqiangchen/stylelint-vars-check-less.git",
   "dependencies": {
     "css-color-names": "^1.0.1",
     "hex-color-regex": "^1.1.0",

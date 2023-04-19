@@ -1,26 +1,26 @@
-# stylelint-vars-check
+# stylelint-vars-check-less
 
-> 利用stylelint检查sass,less变量，通过stylelint插件进行提示
+> 利用stylelint检查less变量，通过stylelint插件进行提示
 
 [English](./README.md) | [*中文*]()
 
 ## 作用
 
-在一个项目中大部分会考虑到单独抽出公用的less,sass变量，如下：
+在一个项目中大部分会考虑到单独抽出公用的less变量，如下：
 
 ```text
-// 假设这个文件是vars.scss
-$color-1: #000;
-$color-2: #001;
-$color-3: #002;
+// 假设这个文件是vars.less
+@color-1: #000;
+@color-2: #001;
+@color-3: #002;
 ...
 
-$font-base: 16px;
-$font-sm: 14px;
+@font-base: 16px;
+@font-sm: 14px;
 ...
 ```
 
-那么在使用的时候，你是否会有遇见过突然忘了这个#001的颜色在vars.scss叫啥名字？如果觉得这是个问题，那么这个插件符合你的需求。
+那么在使用的时候，你是否会有遇见过突然忘了这个#001的颜色在vars.less叫啥名字？如果觉得这是个问题，那么这个插件符合你的需求。
 
 ## 使用
 
@@ -30,7 +30,7 @@ $font-sm: 14px;
 ```javascript
 // stylelint.config.js
     module.exports = {
-        plugins: ['stylelint-vars-check'],
+        plugins: ['stylelint-vars-check-less'],
         rules: {
             'vars/check': [ // 针对全部变量
               {
