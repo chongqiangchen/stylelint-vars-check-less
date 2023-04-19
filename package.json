@@ -16,7 +16,7 @@
     "font-size-vars"
   ],
   "author": "<dxiongya@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/chongqiangchen/stylelint-vars-check-less.git",
   "dependencies": {
     "css-color-names": "^1.0.1",
