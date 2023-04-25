@@ -17,6 +17,7 @@ function getColorWarnMessage(color, colorInfo) {
   if (varName.length) {
     return {
       msg: getMsgCnt(resolveColor(color).matchOriginColor, varName),
+      originValue: resolveColor(color).matchOriginColor,
       fixValue: varName[0],
     };
   }
@@ -58,11 +59,11 @@ function rule(inputs, secondary, context = {}) {
 
     root.walkDecls(decl => {
       if (isColorProp(decl.prop) && isColor(decl.value)) {
-        const { msg, fixValue } = getColorWarnMessage(decl.value, colorInfo);
+        const { msg, fixValue, originValue } = getColorWarnMessage(decl.value, colorInfo);
 
         if (msg) {
           if (isAutoFixing) {
-            decl.value = fixValue;
+            decl.value = decl.value.replice(originValue, fixValue);
           } else {
             report({
               message: messages.rejected(msg),
