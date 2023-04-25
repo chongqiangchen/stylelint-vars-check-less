@@ -63,7 +63,7 @@ function rule(inputs, secondary, context = {}) {
 
         if (msg) {
           if (isAutoFixing) {
-            decl.value = decl.value.replice(originValue, fixValue);
+            decl.value = decl.value.replace(originValue, fixValue);
           } else {
             report({
               message: messages.rejected(msg),
