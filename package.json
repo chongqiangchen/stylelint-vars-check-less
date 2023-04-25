@@ -1,6 +1,6 @@
 {
   "name": "stylelint-vars-check-less",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Use stylelint to check less variables, and prompt through the stylelint plugin",
   "main": "index.js",
   "scripts": {
